@@ -262,4 +262,5 @@ The major observations from re-designed visualisation are as follow:
 
 ***(c)	Within the top 6 trading markets, Singapore was a net exporter to 3 markets in year 2020***, i.e., China, Hong Kong and USA ***whilst in year 2019, Singapore was a net exporter to 2 markets*** i.e., China and Hong Kong. In 2020, exports to Japan also rose to enable breakeven trade balance and Singapore was net importer to 2 markets i.e., Malaysia and Taiwan. In contrast, Singapore was a net importer to 4 out of the same 6 trading markets in 2019.
 
-~ End
+
+*~ End*
