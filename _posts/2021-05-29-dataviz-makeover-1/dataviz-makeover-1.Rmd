@@ -78,8 +78,10 @@ The above alternative graphical representation proposed will also provide the fo
 
 Please view the interactive visualisation on Tableau Public [**here**](https://public.tableau.com/app/profile/jessica.tan2849/viz/dashboard_16221702508380/Dashboard1).
 
+
  
 # 4.0	 Step-by-step Procedure Guide
+
 
 ## 4.1 Data setup & preparation
 
@@ -254,10 +256,10 @@ Figure 5: Re-designed Visualisation
 
 The major observations from re-designed visualisation are as follow:
 
-(a)	Total annual **trade value with Japan rose from 7th place in year 2019 to 6th place in year 2020** (in above top markets ranking list), surpassing Indonesia which was 6th place in 2019. This was primarily due to decline in trade value with Indonesia in year 2020 whilst trade value with Japan in year 2020 maintained close to 2019 level.
+***(a)	Total annual trade value with Japan rose from 7th place in year 2019 to 6th place in year 2020*** (in above top markets ranking list), surpassing Indonesia which was 6th place in 2019. This was primarily due to decline in trade value with Indonesia in year 2020 whilst trade value with Japan in year 2020 maintained close to 2019 level.
   
-(b)	**For Singapore’s top 6 trading markets in year 2020, exports were generally on uptrend and grew compared to previous year except for exports to Malaysia**. Singapore’s export value to Malaysia had fallen off a cliff in early 2020 and troughed around April 2020, but remained below its 2019 level throughout 2020.  On the other hand, imports from Malaysia, Taiwan, and Hong Kong grew in year 2020 compared to prior year whilst imports from China, United States and Japan fell. The decline in import and export trade values with these four countries – Malaysia (exports), China (imports), United States (imports), and Japan (imports) – showed the adverse impact of the COVID19 pandemic on trade activities with these countries.  
+***(b)	For Singapore’s top 6 trading markets in year 2020, exports were generally on uptrend and grew compared to previous year except for exports to Malaysia.*** Singapore’s export value to Malaysia had fallen off a cliff in early 2020 and troughed around April 2020, but remained below its 2019 level throughout 2020.  On the other hand, imports from Malaysia, Taiwan, and Hong Kong grew in year 2020 compared to prior year whilst imports from China, United States and Japan fell. The decline in import and export trade values with these four countries – Malaysia (exports), China (imports), United States (imports), and Japan (imports) – showed the adverse impact of the COVID19 pandemic on trade activities with these countries.  
 
-(c)	**In year 2020, Singapore was a net exporter to 3 markets**, i.e., China, Hong Kong and USA **whilst in year 2019, Singapore was a net exporter to 2 markets i.e., China and Hong Kong.** In 2020, exports to Japan also rose to enable breakeven trade balance and Singapore was net importer to 2 markets i.e., Malaysia and Taiwan. In contrast, Singapore was a net importer to 4 out of the same 6 trading markets in 2019.
+***(c)	In year 2020, Singapore was a net exporter to 3 markets**, i.e., China, Hong Kong and USA **whilst in year 2019, Singapore was a net exporter to 2 markets i.e., China and Hong Kong.*** In 2020, exports to Japan also rose to enable breakeven trade balance and Singapore was net importer to 2 markets i.e., Malaysia and Taiwan. In contrast, Singapore was a net importer to 4 out of the same 6 trading markets in 2019.
 
 ~ End
