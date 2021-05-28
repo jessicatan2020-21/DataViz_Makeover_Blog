@@ -1498,7 +1498,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><strong><em>(c) Input trendlines:</em></strong> Set trendlines for import and export trade values in the country graphs to provide clarity on whether the import and export trade values were on up or down trends.</p>
 <p><strong><em>(d) Add annual market trade value bar chart:</em></strong> To facilitate comparison and understanding of the importance of the top trading markets for Singapore, a bar chart illustrating the annual trade values for Singapore’s top trading markets in years 2019 and 2020 has been added to the visualisation.</p>
 <h2 id="aesthetical-improvements">2.2 Aesthetical Improvements</h2>
-<p>The proposed alternative graphical representation proposed will also provide the following aesthetical improvements:</p>
+<p>The proposed alternative graphical representation will also provide the following aesthetical improvements:</p>
 <p><strong><em>(a) Remove duplicate y-axis:</em></strong> As both import and export values are denoted in SGD, one of the two original double y-axes (for each graph) is removed so that both import and export values could share common y-axis and markings. This would allow the import and export chart areas and trendlines to be comparable since they now have common y-axis markings. At the same time, the overlapping import and export chart areas would become meaningful as these now depict truthfully the extent of overlap between import and export values.</p>
 <p><strong><em>(b) Align graph sizes:</em></strong> Re-size and refine the country graphs to ensure they are standardised which will prevent the overall visualisation from looking disorganized.</p>
 <p><strong><em>(c) Improve graph colours:</em></strong> The intention is to have the colour for the overlapping import and export chart areas distinctly different from the colours used for the standalone import and export chart areas. This is to prevent the impression that the overlapping chart areas are mostly imports or exports which can happen, as with the original visualisation, if the overlap chart area colour belong to any shades of the standalone import or export chart areas.</p>
@@ -1519,11 +1519,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </ul>
 <p><img src="fig4.1.3.png" /> Figure 4.1.3: Merge T1 and T2 via “union”</p>
 <ul>
-<li>Note that a new column “Table Name” emerges after the “union” function applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):</li>
+<li>Note that a new column “Table Name” emerges after the “union” function is applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):</li>
 </ul>
 <p><img src="fig4.1.4.png" /> Figure 4.1.4: Merge T1 and T2 via “union”</p>
 <ul>
-<li>Clean the merged excel file (T1 and T2) using the “Data Interpreter”.</li>
+<li>Clean the merged excel file (T1 and T2) using the “Data Interpreter”:</li>
 </ul>
 <p><img src="fig4.1.5.png" /> Figure 4.1.5: Clean file via “Data Interpreter”</p>
 <ul>
@@ -1535,11 +1535,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </ul>
 <p><img src="fig4.1.7.png" /> Figure 4.1.7: Hide irrelevant columns</p>
 <ul>
-<li>Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column, trade values are in another column and variables (i.e. countries) are in another column:</li>
+<li>Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column and trade values are in another column:</li>
 </ul>
 <p><img src="fig4.1.8.png" /> Figure 4.1.8: Apply “pivot table” function to transpose month-year columns into rows</p>
 <ul>
-<li>Rename the transposed columns – i.e., relevant pivot field columns into “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):</li>
+<li>Rename columns – i.e., “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):</li>
 </ul>
 <p><img src="fig4.1.9.png" /> Figure 4.1.9: Rename columns and variables of transposed data</p>
 <ul>
@@ -1547,7 +1547,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </ul>
 <p><img src="fig4.1.10.png" /> Figure 4.1.10: Check and ensure correct data types of data fields</p>
 <ul>
-<li>Using the Aliases function, check and clean/remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:</li>
+<li>Using the Aliases function, check and remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:</li>
 </ul>
 <p><img src="fig4.1.11.png" /> Figure 4.1.11: Check and clean/re-word column contents using “Aliases” function</p>
 <h2 id="visualisation-re-design">4.2 Visualisation Re-design</h2>

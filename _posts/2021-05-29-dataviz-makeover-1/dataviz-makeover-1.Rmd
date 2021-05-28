@@ -65,7 +65,7 @@ The alternative graphical representation would enhance the clarity of the visual
 
 ## 2.2	 Aesthetical Improvements
 
-The proposed alternative graphical representation proposed will also provide the following aesthetical improvements:
+The proposed alternative graphical representation will also provide the following aesthetical improvements:
 
 ***(a)	Remove duplicate y-axis:*** As both import and export values are denoted in SGD, one of the two original double y-axes (for each graph) is removed so that both import and export values could share common y-axis and markings. This would allow the import and export chart areas and trendlines to be comparable since they now have common y-axis markings. At the same time, the overlapping import and export chart areas would become meaningful as these now depict truthfully the extent of overlap between import and export values. 
 
@@ -99,12 +99,12 @@ Figure 4.1.2: Load file
 ![](fig4.1.3.png)
 Figure 4.1.3: Merge T1 and T2 via “union”
 
-*	Note that a new column “Table Name” emerges after the “union” function applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):
+*	Note that a new column “Table Name” emerges after the “union” function is applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):
 
 ![](fig4.1.4.png) 
 Figure 4.1.4: Merge T1 and T2 via “union”
 
-*	Clean the merged excel file (T1 and T2) using the “Data Interpreter”.  
+*	Clean the merged excel file (T1 and T2) using the “Data Interpreter”:  
 
 ![](fig4.1.5.png)
 Figure 4.1.5: Clean file via “Data Interpreter”
@@ -119,12 +119,12 @@ Figure 4.1.6: Cleaned file
 ![](fig4.1.7.png) 
 Figure 4.1.7: Hide irrelevant columns
 
-*	Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column,  trade values are in another column and variables (i.e. countries) are in another column:
+*	Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column and  trade values are in another column:
 
 ![](fig4.1.8.png) 
 Figure 4.1.8: Apply “pivot table” function to transpose month-year columns into rows
 
-*	Rename the transposed columns – i.e., relevant pivot field columns into “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):
+*	Rename columns – i.e., “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):
 
 ![](fig4.1.9.png) 
 Figure 4.1.9: Rename columns and variables of transposed data
@@ -134,7 +134,7 @@ Figure 4.1.9: Rename columns and variables of transposed data
 ![](fig4.1.10.png) 
 Figure 4.1.10: Check and ensure correct data types of data fields
 
-*	Using the Aliases function, check and clean/remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:
+*	Using the Aliases function, check and remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:
 
 ![](fig4.1.11.png) 
 Figure 4.1.11: Check and clean/re-word column contents using “Aliases” function 
