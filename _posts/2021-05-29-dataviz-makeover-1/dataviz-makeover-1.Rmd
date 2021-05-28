@@ -39,9 +39,9 @@ The original visualisation was also aesthetically challenged in the following wa
 
 ***(a)	Unnecessary and confusing duplicate y-axes:*** As both import and export values are denoted in SGD, it was not necessary to create country graphs with separate y-axes for import and export values which diminished the areas of the graphs. The problem was also exacerbated by different y-axis markings for import and export values within each graph. As a result, the overlaying of the import and export chart areas seemed overcrowded and confusing, if not misleading, as the import and export areas were not visually comparable due to their different y-axis markings.
 
-***(b)	Inconsistent graph sizes:*** The graphical plots were obviously not standardised across the trading countries which made the visualisation looked disorganized.
+***(b)	Inconsistent graph sizes:*** The sizes of the country graphs were obviously not standardised which made the visualisation looked disorganized.
 
-***(c)	Too much brown:*** The shades of brown representing imports and overlapping import and export chart areas were too similar. This created an impression that the overlapping chart areas were imports which was incorrect as the overlapping chart areas represented both imports and exports.
+***(c)	Too much brown:*** The shades of brown representing imports as well as overlapping import and export chart areas were too similar. This created an impression that the overlapping chart areas were imports which was incorrect as the overlapping chart areas represented both imports and exports.
 
 
 # 2.0	 Alternative Graphical Presentation
@@ -55,23 +55,23 @@ Figure 2: Alternative Graphical Presentation
 
 The alternative graphical representation would enhance the clarity of the visualisation in the following ways:
 
-***(a)	Change visualisation header:*** As Hong Kong is not a country but a Special Administrative Region of China, the header is revised to “Singapore’s Top Six Trading Markets, 2019 – 2020”. Compared to the original header which did not include “Singapore”, the proposed header highlights Singapore’s trading relationship with the 6 countries.
+***(a)	Refine visualisation header:*** As Hong Kong is not a country but a Special Administrative Region of China, the header is revised to “Singapore’s Top Six Trading Markets, 2019 – 2020”. Compared to the original header which did not include “Singapore”, the proposed header highlights Singapore’s trading relationship with the 6 countries.
 
 ***(b)	Correct labelling and formatting of x- and y-axes:*** Revise x-axis label from “Month of Period” to “Month-Year” and set markings to denote the months on the x-axis. For the y-axis, input y-axis label “$’000” to denote the units for y-axis.
 
 ***(c)	Input trendlines:*** Set trendlines for import and export trade values in the country graphs to provide clarity on whether the import and export trade values were on up or down trends. 
 
-***(d)	Add bar chart:*** To facilitate comparison and understanding of the importance of the top trading markets for Singapore, a global bar chart based on the annual consolidated trade values for each country in years 2019 and 2020 has been added to the visualisation.  
+***(d)	Add annual country trade value bar chart:*** To facilitate comparison and understanding of the importance of the top trading markets for Singapore, a global bar chart based on the annual consolidated trade values for each country in years 2019 and 2020 has been added to the visualisation.  
 
 ## 2.2	 Aesthetical Improvements
 
-The above alternative graphical representation proposed will also provide the following aesthetical improvements:
+The proposed alternative graphical representation proposed will also provide the following aesthetical improvements:
 
 ***(a)	Remove duplicate y-axis:*** As both import and export values are denoted in SGD, one of the two original double y-axes (for each graph) is removed so that both import and export values could share common y-axis and markings. This would allow the import and export chart areas and trendlines to be comparable since they now have common y-axis markings. At the same time, the overlapping import and export chart areas would become meaningful as these now depict truthfully the extent of overlap between import and export values. 
 
-***(b)	Align graph sizes:*** Re-size the graphical plots to ensure they are standardised across the trading countries. This will prevent the visualisation from looking disorganized.
+***(b)	Align graph sizes:*** Re-size and refine the country graphs to ensure they are standardised which will prevent the overall visualisation from looking disorganized.
 
-***(c)	Change graph colours:*** The intention is to have the colour for the overlapping import and export chart areas distinctly different from the colours used for the standalone import and export chart areas. This is to prevent the impression that the overlapping chart areas are mostly imports or exports which can happen, as with the original visualisation, if the overlap chart area colour belong to any shades of the standalone import or export chart areas. 
+***(c)	Improve graph colours:*** The intention is to have the colour for the overlapping import and export chart areas distinctly different from the colours used for the standalone import and export chart areas. This is to prevent the impression that the overlapping chart areas are mostly imports or exports which can happen, as with the original visualisation, if the overlap chart area colour belong to any shades of the standalone import or export chart areas. 
 
 
 # 3.0	 Proposed Visualisation
@@ -79,9 +79,8 @@ The above alternative graphical representation proposed will also provide the fo
 Please view the interactive visualisation on Tableau Public [**here**](https://public.tableau.com/app/profile/jessica.tan2849/viz/dashboard_16221702508380/Dashboard1).
 
 
- 
-# 4.0	 Step-by-step Procedure Guide
 
+# 4.0	 Step-by-step Procedure Guide
 
 ## 4.1 Data setup & preparation
 
