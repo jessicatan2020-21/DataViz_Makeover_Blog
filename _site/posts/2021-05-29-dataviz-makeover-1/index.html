@@ -88,7 +88,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>DataViz Blog: DataViz Makeover 1</title>
 
-<meta property="description" itemprop="description" content="A short description of the post."/>
 
 
 <!--  https://schema.org/Article -->
@@ -99,20 +98,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="DataViz Blog: DataViz Makeover 1"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="A short description of the post."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="DataViz Blog"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="DataViz Blog: DataViz Makeover 1"/>
-<meta property="twitter:description" content="A short description of the post."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["DataViz Makeover 1"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Jessica Tan"]},{"type":"character","attributes":{},"value":["https://github.com/jessicatan2020-21/DataViz_Makeover_Blog"]}]}]},{"type":"character","attributes":{},"value":["05-29-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["DataViz Makeover 1"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Jessica Tan"]},{"type":"character","attributes":{},"value":["https://github.com/jessicatan2020-21/DataViz_Makeover_Blog"]}]}]},{"type":"character","attributes":{},"value":["05-29-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2061,7 +2058,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"DataViz Makeover 1","description":"A short description of the post.","authors":[{"author":"Jessica Tan","authorURL":"https://github.com/jessicatan2020-21/DataViz_Makeover_Blog","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-05-29T00:00:00.000+08:00","citationText":"Tan, 2021"}
+{"title":"DataViz Makeover 1","authors":[{"author":"Jessica Tan","authorURL":"https://github.com/jessicatan2020-21/DataViz_Makeover_Blog","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-05-29T00:00:00.000+08:00","citationText":"Tan, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2087,7 +2084,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1>DataViz Makeover 1</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A short description of the post.</p></p>
+
 </div>
 
 <div class="d-byline">
@@ -2097,8 +2094,108 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
-<p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
+<h1 id="original-data-visualisation">1.0 Original Data Visualisation</h1>
+<p>Singapore’s merchandise trade with its top 6 trading markets from years 2019 to 2020 was originally presented as follow:</p>
+<p>Figure 1: Original Visualisation</p>
+<h2 id="clarity">1.1 Clarity</h2>
+<p>It was observed that the clarity of the original visualisation had been diminished by the following shortcomings:</p>
+<ol type="a">
+<li><p>Incorrect visualisation header: As Hong Kong is not a country but a Special Administrative Region of China, it would be more appropriate to replace the word “countries” with “markets”, and the dashboard header would be “Merchandise Trade of Top Six Trading Markets, 2019 – 2020” instead.</p></li>
+<li><p>Improper labelling and formatting of both x-axis and y-axis: Although the x-axis was labelled “Month of Period”, there was no marking to denote the months on the x-axis. In addition, the x-axis for Japan was not properly formatted to show the timeline start from year 2019 and end at start of year 2021, which was also inconsistent with the other country graphs. For the y-axis, the units comprising SGD in thousands ($’000) were also missing.</p></li>
+<li><p>Missing trendlines: As the country graphs plot the month-to-month trade values which may fluctuate widely, it is difficult to see if the trade values are on up or down trends for some graphs. In such cases, trendlines would have helped to identify and clarify whether trade values are on the rise or decline.</p></li>
+</ol>
+<h2 id="aesthetics">1.2 Aesthetics</h2>
+<p>The original visualisation was also aesthetically challenged in the following ways:</p>
+<ol type="a">
+<li><p>Unnecessary and confusing duplicate y-axes: As both import and export values are denoted in SGD, it was not necessary to create country graphs with separate y-axes for import and export values which diminished the areas of the graphs. The problem was also exacerbated by different y-axis markings for import and export values within each graph. As a result, the overlaying of the import and export chart areas seemed overcrowded and confusing, if not misleading, as the import and export areas were not visually comparable due to their different y-axis markings.</p></li>
+<li><p>Inconsistent graph sizes: The graphical plots were obviously not standardised across the trading countries which made the visualisation looked disorganized.</p></li>
+<li><p>Too much brown: The shades of brown representing imports and overlapping import and export chart areas were too similar. This created an impression that the overlapping chart areas were imports which was incorrect as the overlapping chart areas represented both imports and exports.</p></li>
+</ol>
+<h1 id="alternative-graphical-presentation">2.0 Alternative Graphical Presentation</h1>
+<p>The proposed alternative graphical presentation is as follow:</p>
+<p>Figure 2: Alternative Graphical Presentation</p>
+<h2 id="clarity-improvements">2.1 Clarity Improvements</h2>
+<p>The alternative graphical representation would enhance the clarity of the visualisation in the following ways:</p>
+<ol type="a">
+<li><p>Change visualisation header: As Hong Kong is not a country but a Special Administrative Region of China, the header is revised to “Singapore’s Top Six Trading Markets, 2019 – 2020”. Compared to the original header which did not include “Singapore”, the proposed header highlights Singapore’s trading relationship with the 6 countries.</p></li>
+<li><p>Correct labelling and formatting of x- and y-axes: Revise x-axis label from “Month of Period” to “Month-Year” and set markings to denote the months on the x-axis. For the y-axis, input y-axis label “$’000” to denote the units for y-axis.</p></li>
+<li><p>Input trendlines: Set trendlines for import and export trade values in the country graphs to provide clarity on whether the import and export trade values were on up or down trends.</p></li>
+<li><p>Add bar chart: To facilitate comparison and understanding of the importance of the top trading markets for Singapore, a global bar chart based on the annual consolidated trade values for each country in years 2019 and 2020 has been added to the visualisation.</p></li>
+</ol>
+<h2 id="aesthetical-improvements">2.2 Aesthetical Improvements</h2>
+<p>The above alternative graphical representation proposed will also provide the following aesthetical improvements:</p>
+<ol type="a">
+<li><p>Remove duplicate y-axis: As both import and export values are denoted in SGD, one of the two original double y-axes (for each graph) is removed so that both import and export values could share common y-axis and markings. This would allow the import and export chart areas and trendlines to be comparable since they now have common y-axis markings. At the same time, the overlapping import and export chart areas would become meaningful as these now depict truthfully the extent of overlap between import and export values.</p></li>
+<li><p>Align graph sizes: Re-size the graphical plots to ensure they are standardised across the trading countries. This will prevent the visualisation from looking disorganized.</p></li>
+<li><p>Change graph colours: The intention is to have the colour for the overlapping import and export chart areas distinctly different from the colours used for the standalone import and export chart areas. This is to prevent the impression that the overlapping chart areas are mostly imports or exports which can happen, as with the original visualisation, if the overlap chart area colour belong to any shades of the standalone import or export chart areas.</p></li>
+</ol>
+<h1 id="proposed-visualisation">3.0 Proposed Visualisation</h1>
+<p>Please view the interactive visualisation on Tableau Public here.</p>
+<p>  # 4.0 Step-by-step Procedure Guide</p>
+<h2 id="data-setup-preparation">4.1 Data setup &amp; preparation</h2>
+<p>• Create a new workbook and click ‘Connect to data’:</p>
+<p>Figure 4.1.1: Connect to Data</p>
+<p>• Open and load excel file (i.e., outputFile) into Tableau in Datasource template:</p>
+<p>Figure 4.1.2: Load file</p>
+<p>• Merge files T1 (imports) and T2 via “union”:</p>
+<p>Figure 4.1.3: Merge T1 and T2 via “union”</p>
+<p>• Note that a new column “Table Name” emerges after the “union” function applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):</p>
+<p>Figure 4.1.4: Merge T1 and T2 via “union” • Clean the merged excel file (T1 and T2) using the “Data Interpreter”.<br />
+Figure 4.1.5: Clean file via “Data Interpreter”</p>
+<p>• As a result, all previous “na” values were converted to “null”:</p>
+<p>Figure 4.1.6: Cleaned file</p>
+<p>• Exclude by “hiding” columns from years 1976 to 2018, as well as columns after Dec 2019 as these periods are outside the visualisation timeline:</p>
+<p>Figure 4.1.7: Hide irrelevant columns</p>
+<p>• Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column, trade values are in another column and variables (i.e. countries) are in another column:</p>
+<p>Figure 4.1.8: Apply “pivot table” function to transpose month-year columns into rows</p>
+<p>• Rename the transposed columns – i.e., relevant pivot field columns into “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):</p>
+<p>Figure 4.1.9: Rename columns and variables of transposed data • Check and convert data columns’ content into correct data types, e.g. date fields should be in date data type:</p>
+<p>Figure 4.1.10: Check and ensure correct data types of data fields • Using the Aliases function, check and clean/remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:</p>
+<p>Figure 4.1.11: Check and clean/re-word column contents using “Aliases” function</p>
+<h2 id="visualisation-re-design">4.2 Visualisation Re-design</h2>
+<p>• To create individual country graphs, filter countries column by dropping “Countries” into “Filters” section of the Tableau worksheet and select the respective country name:</p>
+<p>Figure 4.2.1: Filter “Countries” to select country for visualisation • Thereafter, drop “Month-Year” table into Columns and select “Month” in the continuous (lower) section of the drop-down list so that the graph will be plotted with Month-Year on x-axis in continuous format:</p>
+<p>Figure 4.2.2: Select continuous “Month” in drop-down list • Thereafter, drop “Trade Value” into Rows and drag “Trade Type” into “Marks-Color” field to provide different colours to differentiate between import and export trade values:</p>
+<p>Figure 4.2.3: Drop “Trade Value” into Rows and “Trade Type” into “Marks-Color”</p>
+<p>• Next, to correct the x-axis label which had been auto-generated as “Month of Month Year”, right click on x-axis panel and choose “Edit Axis” to change the axis label to “Month-Year”:</p>
+<p>Figure 4.2.4: Change x-axis label to “Month-Year”</p>
+<p>• Thereafter, format both x and y-axes by clicking on their panels and choose “format” in turn. For x-axis, choose “Up” at Axis-Title to tilt “Month-Year” at 90-degrees. This will enable more Month-Year markings to be fitted on x-axis:</p>
+<p>Figure 4.2.5: Format “Month-Year” markings on x-axis to “Up”</p>
+<p>• Note below that the x-axis can now accommodate more “Month-Year” markings after the above change. Thereafter, format the y-axis panel to standardise the ticks across the graphs:</p>
+<p>Figure 4.2.6: Standardise y-axis markings across graphs</p>
+<p>• Next, the x and y-axis panels would be formatted for colour shading:</p>
+<p>Figure 4.2.7: Format axes panel shading</p>
+<p>• Thereafter, format the colour shading to the entire worksheet by clicking on the sheet template and choose worksheet colour:</p>
+<p>Figure 4.2.8: Format colour shading for entire worksheet</p>
+<p>• After shading the entire worksheet, input the country name into the Sheet Title by clicking on the Title panel and then write-on:</p>
+<p>Figure 4.2.9: Insert country name into title panel of country graph</p>
+<p>• Next, insert trendlines for the import (orange) and exports (blue) trade values by right clicking on mouse and choosing “Trendlines” and “Show Trend Lines”:</p>
+<p>Figure 4.2.10: Input trendlines for import and export trade values</p>
+<p>• The completed individual country graph/worksheet is as follow:</p>
+<p>Figure 4.2.11: Individual country graph with import and export trendlines</p>
+<p>• Aside from the individual country graphs performed for the top 6 trading markets by trade value, a global consolidated graph is also made to rank the countries by trade values to determine the top (10) trading markets.</p>
+<p>• First, drop “Countries” into “Rows” as well as “Filters” fields. Then, select “General” and scroll to bottom of list to untick “Total Merchandise Exports” and “Total Merchandise Imports” as these should not be included because they are consolidated values:</p>
+<p>Figure 4.2.12: Exclude “Total Merchandise Imports” and “Total Merchandise Exports” • Next, select “Top”, and click on “By field” and input 10 to filter the Top 10 markets by “Trade Value”, choosing “Sum”:</p>
+<p>Figure 4.2.13: Filter for the Top 10 countries • Drop “Trade Value” and “Month-Year” into Columns. For “Month-Year”, choose “Year” in upper (non-continuous) section of drop-down list. This is to provide separate summations of the trade values for each country by year:</p>
+<p>Figure 4.2.14: Select upper (non-continuous) “Year” attribute for “Month-Year” in Columns field</p>
+<p>• Input graph title by clicking on the title panel and typing in the “Edit Title” box:</p>
+<p>Figure 4.2.15: Input graph title into title panel • Click on the “sort” icon at the top-right tip of each of the 2 bar charts to sort in descending order:</p>
+<p>Figure 4.2.16: Sort the bars for trade values in descending order • Format the figures for the trade values to fit them into bars by clicking on the “Trade Value” table on the left panel and choose “default properties” and then “number format”. Thereafter, select “Number (custom)” and choose “Million (M)” for display units:</p>
+<p>Figure 4.2.17: Label bar chart with trade values</p>
+<h2 id="dashboard-building">4.3 Dashboard Building</h2>
+<p>• To build the dashboard, input the 7 completed worksheets (i.e., 6 individual country graphs and 1 consolidated graph) into the dashboard:</p>
+<p>Figure 4.3.1: Input completed worksheets into dashboard</p>
+<p>• Thereafter, click on format dashboard to provide colour shading for the dashboard:</p>
+<p>Figure 4.3.2: Colour shading for dashboard • Finally, refine the dashboard presentation by re-sizing the individual charts to fit properly into the dashboard, and add dashboard title by clicking on the title panel and inputting in the pop-up “Edit Title” box:</p>
+<p>Figure 4.3.3: Proper sizing individual charts and add dashboard title 5.0 Major Observations Re-designed visualisation:</p>
+<h1 id="figure-5-re-designed-visualisation">Figure 5: Re-designed Visualisation</h1>
+<p>The major observations from re-designed visualisation are as follow:</p>
+<ol type="a">
+<li><p>Total annual trade value with Japan rose from 7th place in year 2019 to 6th place in year 2020 (in above top markets ranking list), surpassing Indonesia which was 6th place in 2019. This was primarily due to decline in trade value with Indonesia in year 2020 whilst trade value with Japan in year 2020 maintained close to 2019 level.</p></li>
+<li><p>For Singapore’s top 6 trading markets in year 2020, exports were generally on uptrend and grew compared to previous year except for exports to Malaysia. Singapore’s export value to Malaysia had fallen off a cliff in early 2020 and troughed around April 2020, but remained below its 2019 level throughout 2020. On the other hand, imports from Malaysia, Taiwan, and Hong Kong grew in year 2020 compared to prior year whilst imports from China, United States and Japan fell. The decline in import and export trade values with these four countries – Malaysia (exports), China (imports), United States (imports), and Japan (imports) – showed the adverse impact of the COVID19 pandemic on trade activities with these countries.</p></li>
+<li><p>In year 2020, Singapore was a net exporter to 3 markets, i.e., China, Hong Kong and USA whilst in year 2019, Singapore was a net exporter to 2 markets i.e., China and Hong Kong. In 2020, exports to Japan also rose to enable breakeven trade balance and Singapore was net importer to 2 markets i.e., Malaysia and Taiwan. In contrast, Singapore was a net importer to 4 out of the same 6 trading markets in 2019.</p></li>
+</ol>
+<p>~ End</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
