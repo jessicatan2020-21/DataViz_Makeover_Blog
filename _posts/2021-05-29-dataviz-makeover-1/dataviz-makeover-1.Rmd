@@ -89,56 +89,66 @@ Please view the interactive visualisation on Tableau Public [**here**](https://p
 ![](fig4.1.1.png) 
 Figure 4.1.1: Connect to Data
 
+
 *	Open and load excel file (i.e., outputFile) into Tableau in Datasource template:
 
 ![](fig4.1.2.png) 
 Figure 4.1.2: Load file
+
 
 *	Merge files T1 (imports) and T2 via “union”:
 
 ![](fig4.1.3.png)
 Figure 4.1.3: Merge T1 and T2 via “union”
 
+
 *	Note that a new column “Table Name” emerges after the “union” function is applied. This will help to identify the source of the data merged i.e. T1 (imports) or T2 (exports):
 
 ![](fig4.1.4.png) 
-
 Figure 4.1.4: Merge T1 and T2 via “union”
+
 
 *	Clean the merged excel file (T1 and T2) using the “Data Interpreter”:  
 
 ![](fig4.1.5.png)
 Figure 4.1.5: Clean file via “Data Interpreter”
 
+
 *	As a result, all previous “na” values were converted to “null”:
 
 ![](fig4.1.6.png) 
 Figure 4.1.6: Cleaned file
+
 
 *	Exclude by “hiding” columns from years 1976 to 2018, as well as columns after Dec 2019 as these periods are outside the visualisation timeline:
 
 ![](fig4.1.7.png) 
 Figure 4.1.7: Hide irrelevant columns
 
+
 *	Apply “pivot table” function on the remaining columns from Jan 2019 to Dec 2020 to transpose the data so that month-year data is in a single column and  trade values are in another column:
 
 ![](fig4.1.8.png) 
 Figure 4.1.8: Apply “pivot table” function to transpose month-year columns into rows
+
 
 *	Rename columns – i.e., “Month-Year”, “Trade Values”, “Trade Types”, and Countries” (previously “Variables”):
 
 ![](fig4.1.9.png) 
 Figure 4.1.9: Rename columns and variables of transposed data
 
+
 *	Check and convert data columns’ content into correct data types, e.g. date fields should be in date data type:
 
 ![](fig4.1.10.png) 
 Figure 4.1.10: Check and ensure correct data types of data fields
 
+
 *	Using the Aliases function, check and remove words “(Thousands Dollars”) from country names; re-word date data from “year-month” format to “month-year”; and convert “T1” into “import” and “T2” into “export” in Sheet column which column name would be change to “Trade Type” as mentioned above:
 
 ![](fig4.1.11.png) 
 Figure 4.1.11: Check and clean/re-word column contents using “Aliases” function 
+
 
 ## 4.2 Visualisation Re-design
 
@@ -147,55 +157,66 @@ Figure 4.1.11: Check and clean/re-word column contents using “Aliases” funct
 ![](fig4.2.1.png) 
 Figure 4.2.1: Filter “Countries” to select country for visualisation
 
+
 *	Thereafter, drop “Month-Year” table into Columns and select “Month” in the continuous (lower) section of the drop-down list so that the graph will be plotted with Month-Year on x-axis in continuous format: 
 
 ![](fig4.2.2.png) 
 Figure 4.2.2: Select continuous “Month” in drop-down list 
+
 
 *	Thereafter, drop “Trade Value” into Rows and drag “Trade Type” into “Marks-Color” field to provide different colours to differentiate between import and export trade values:
  
 ![](fig4.2.3.png) 
 Figure 4.2.3: Drop “Trade Value” into Rows and “Trade Type” into “Marks-Color” 
 
+
 *	Next, to correct the x-axis label which had been auto-generated as “Month of Month Year”, right click on x-axis panel and choose “Edit Axis” to change the axis label to “Month-Year”:
 
 ![](fig4.2.4.png)  
 Figure 4.2.4: Change x-axis label to “Month-Year”
+
 
 *	Thereafter, format both x and y-axes by clicking on their panels and choose “format” in turn. For x-axis, choose “Up” at Axis-Title to tilt “Month-Year” at 90-degrees. This will enable more Month-Year markings to be fitted on x-axis: 
 
 ![](fig4.2.5.png) 
 Figure 4.2.5: Format “Month-Year” markings on x-axis to “Up” 
 
+
 *	Note below that the x-axis can now accommodate more “Month-Year” markings after the above change. Thereafter, format the y-axis panel to standardise the ticks across the graphs:
 
 ![](fig4.2.6.png) 
 Figure 4.2.6: Standardise y-axis markings across graphs 
+
 
 *	Next, the x and y-axis panels would be formatted for colour shading: 
 
 ![](fig4.2.7.png) 
 Figure 4.2.7: Format axes panel shading 
 
+
 *	Thereafter, format the colour shading to the entire worksheet by clicking on the sheet template and choose worksheet colour: 
 
 ![](fig4.2.8.png) 
 Figure 4.2.8: Format colour shading for entire worksheet 
+
 
 *	After shading the entire worksheet, input the country name into the Sheet Title by clicking on the Title panel and then write-on:
 
 ![](fig4.2.9.png) 
 Figure 4.2.9: Insert country name into title panel of country graph 
 
+
 *	Next, insert trendlines for the import (orange) and exports (blue) trade values by right clicking on mouse and choosing “Trendlines” and “Show Trend Lines”:
 
 ![](fig4.2.10.png) 
 Figure 4.2.10: Input trendlines for import and export trade values
 
+
 *	The completed individual country graph/worksheet is as follow:
 
 ![](fig4.2.11.png) 
 Figure 4.2.11: Individual country graph with import and export trendlines
+
 
 *	Aside from the individual country graphs performed for the top 6 trading markets by trade value, a global consolidated graph is also made to rank the countries by trade values to determine the top (10) trading markets. 
 
@@ -204,30 +225,36 @@ Figure 4.2.11: Individual country graph with import and export trendlines
 ![](fig4.2.12.png) 
 Figure 4.2.12: Exclude “Total Merchandise Imports” and “Total Merchandise Exports”
 
+
 *	Next, select “Top”, and click on “By field” and input 10 to filter the Top 10 markets by “Trade Value”, choosing “Sum”:
 
 ![](fig4.2.13.png) 
 Figure 4.2.13: Filter for the Top 10 countries
+
 
 *	Drop “Trade Value” and “Month-Year” into Columns. For “Month-Year”, choose “Year” in upper (non-continuous) section of drop-down list. This is to provide separate summations of the trade values for each country by year:
 
 ![](fig4.2.14.png) 
 Figure 4.2.14: Select upper (non-continuous) “Year” attribute for “Month-Year” in Columns field
 
+
 *	Input graph title by clicking on the title panel and typing in the “Edit Title” box:
 
 ![](fig4.2.15.png) 
 Figure 4.2.15: Input graph title into title panel
+
 
 *	Click on the “sort” icon at the top-right tip of each of the 2 bar charts to sort in descending order:
 
 ![](fig4.2.16.png) 
 Figure 4.2.16: Sort the bars for trade values in descending order
 
+
 *	Format the figures for the trade values to fit them into bars by clicking on the “Trade Value” table on the left panel and choose “default properties” and then “number format”. Thereafter, select “Number (custom)” and choose “Million (M)” for display units:
 
 ![](fig4.2.17.png) 
 Figure 4.2.17: Label bar chart with trade values
+
 
 ## 4.3 Dashboard Building
 
@@ -236,10 +263,12 @@ Figure 4.2.17: Label bar chart with trade values
 ![](fig4.3.1.png) 
 Figure 4.3.1: Input completed worksheets into dashboard
 
+
 *	Thereafter, click on format dashboard to provide colour shading for the dashboard:
 
 ![](fig4.3.2.png) 
 Figure 4.3.2: Colour shading for dashboard
+
 
 *	Finally, refine the dashboard presentation by re-sizing the individual charts to fit properly into the dashboard, and add dashboard title by clicking on the title panel and inputting in the pop-up “Edit Title” box:
 
